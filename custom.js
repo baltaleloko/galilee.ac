@@ -1,5 +1,3 @@
-const boxes = document.querySelectorAll('.filter_embedquestion-iframe');
-
-for (const box of boxes) {
-  box.classList.add('lozad');
-}
+const el = document.querySelector('i-frame');
+const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+observer.observe();
